@@ -5,8 +5,14 @@ set foldmethod=indent
 "This prevents a \n being added by vim at the end of the file
 setlocal noeol
 
-" Set omnifunc for python
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+" Only do this part when compiled with support for autocommands
+if has("autocmd")
+    augroup PythonCustom
+        " Set omnifunc for python
+        autocmd FileType python set omnifunc=pythoncomplete#Complete
+        autocmd BufWritePre :Isort
+    augroup END
+endif
 
 " Indentation options
 let g:pyindent_open_paren = '&sw'
