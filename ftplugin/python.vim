@@ -34,3 +34,5 @@ map <F2> "zyw:exe "!python -c 'help(".@z.")'""<CR>
 " " Insert import for current word under cursor 'g:pymode_rope_autoimport_bind'
 " " Should be enabled 'g:pymode_rope_autoimport'
 " let g:pymode_rope_autoimport_bind = '<C-c>ra'
+" let g:pymode_options_max_line_length = 100
+" let g:pymode_trim_whitespaces = 1
