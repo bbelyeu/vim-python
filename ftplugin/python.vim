@@ -2,8 +2,6 @@
 set foldnestmax=2
 set foldlevel=1
 set foldmethod=indent
-"This prevents a \n being added by vim at the end of the file
-setlocal noeol
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
