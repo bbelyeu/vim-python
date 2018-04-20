@@ -28,4 +28,6 @@ map <F2> :PymodeLint<CR>
 
 " Disable Pymode folding b/c I get much better results I like from the settings above
 let g:pymode_folding = 0
-let g:pymode_options_max_line_length = 100
+let g:pymode_options_max_line_length = 99
+let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_length}
+let g:pymode_lint_options_pylint = {'max-line-length': g:pymode_options_max_line_length}
