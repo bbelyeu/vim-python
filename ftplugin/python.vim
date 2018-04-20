@@ -1,8 +1,8 @@
 " Set folding settings
 " If I continue to have issues with folds, I could use foldexpr to fix
 set foldlevel=1
-"set foldmethod=indent
-set foldmethod=syntax
+set foldmethod=indent
+"set foldmethod=syntax
 set foldminlines=3
 set foldnestmax=2
 
@@ -25,4 +25,7 @@ map <F2> :PymodeLint<CR>
 " Insert import for current word under cursor 'g:pymode_rope_autoimport_bind'
 " Should be enabled 'g:pymode_rope_autoimport'
 " let g:pymode_rope_autoimport_bind = '<C-c>ra'
+
+" Disable Pymode folding b/c I get much better results I like from the settings above
+let g:pymode_folding = 0
 let g:pymode_options_max_line_length = 100
