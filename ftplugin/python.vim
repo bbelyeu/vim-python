@@ -5,6 +5,9 @@ set foldmethod=indent
 "set foldmethod=syntax
 set foldminlines=3
 set foldnestmax=2
+" Make tabs, trailing whitespace, and non-breaking spaces visible, idk why
+" it's set like this, but I couldn't get it to work otherwise...
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
