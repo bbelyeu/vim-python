@@ -22,8 +22,8 @@ endif
 map <F1> "zyw:exe "!python -c 'help(".@z.")'""<CR>
 map <F2> :PymodeLint<CR>
 
-" Only use these 2 linters
-" let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'pep257']
+" Only use these linters
+let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'pep257']
 " let g:pymode_lint_ignore = "E501"
 " Insert import for current word under cursor 'g:pymode_rope_autoimport_bind'
 " Should be enabled 'g:pymode_rope_autoimport'
@@ -31,6 +31,6 @@ map <F2> :PymodeLint<CR>
 
 " Disable Pymode folding b/c I get much better results I like from the settings above
 let g:pymode_folding = 0
-let g:pymode_options_max_line_length = 99
+let g:pymode_options_max_line_length = 100
 let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_length}
 let g:pymode_lint_options_pylint = {'max-line-length': g:pymode_options_max_line_length}
